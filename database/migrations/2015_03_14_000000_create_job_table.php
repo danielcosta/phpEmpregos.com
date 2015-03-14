@@ -24,13 +24,12 @@ class CreateJobTable extends Migration {
             $table->string('email_subject_prefix')->nullable();
             $table->string('advertiser_name')->nullable();
             $table->string('advertiser_url')->nullable();
-            $table->text('question_1');
-            $table->text('question_2');
-            $table->text('question_3');
+            $table->text('question_1')->nullable();
+            $table->text('question_2')->nullable();
+            $table->text('question_3')->nullable();
             $table->string('external_id')->nullable();
-            $table->datetime('published_at')->nullable();
-            $table->datetime('updated_at')->nullable();
-            $table->datetime('created_at');
+            $table->timestamp('published_at')->nullable();
+            $table->timestamps();
             $table->unique('external_id');
         });
     }
