@@ -17,8 +17,6 @@ class CreateJobTable extends Migration {
 
         Schema::create('job', function(Blueprint $table)
         {
-            \DB::statement("SET foreign_key_checks = 0;");
-
             $table->increments('id');
             $table->string('title');
             $table->string('location')->nullable();
@@ -37,8 +35,6 @@ class CreateJobTable extends Migration {
             $table->datetime('updated_at')->nullable();
             $table->datetime('created_at');
             $table->unique('external_id');
-
-            \DB::statement("SET foreign_key_checks = 1;");
         });
 
         \DB::statement("set sql_mode=@sql_mode_tmp;");
