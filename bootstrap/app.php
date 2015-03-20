@@ -18,7 +18,7 @@ $app = new Illuminate\Foundation\Application(
 // bootstrapping the x and xd functions
 // for production the function will not do anything, just return
 // the xd function is an enhanced version of the dd function
-new mathiasgrimm\x\X('production' != env('APP_ENV') || 'cli' == php_sapi_name());
+new MathiasGrimm\X\X('production' != env('APP_ENV') || 'cli' == php_sapi_name());
 
 /*
 |--------------------------------------------------------------------------

@@ -23,7 +23,7 @@ Route::controllers([
 if ('production' != env('APP_ENV')) {
     Route::get('test', function(){
 
-        xd(new phpEmpregos\Job\Job());
+//        xd(new phpEmpregos\Job\Job());
 
     });
 }

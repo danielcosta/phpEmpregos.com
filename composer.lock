@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a437233d2cc8df8dcaa824878b7b7ad0",
+    "hash": "3965eaecfde2aa8c5aada3bd38c23982",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -800,20 +800,20 @@
         },
         {
             "name": "mathiasgrimm/arraypath",
-            "version": "dev-master",
+            "version": "v1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mathiasgrimm/arraypath.git",
-                "reference": "b7f4e603350dc51a16b45b252318133df68a9136"
+                "reference": "45c8792953d93ab8a5a59a791e6c24641306abe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mathiasgrimm/arraypath/zipball/b7f4e603350dc51a16b45b252318133df68a9136",
-                "reference": "b7f4e603350dc51a16b45b252318133df68a9136",
+                "url": "https://api.github.com/repos/mathiasgrimm/arraypath/zipball/45c8792953d93ab8a5a59a791e6c24641306abe1",
+                "reference": "45c8792953d93ab8a5a59a791e6c24641306abe1",
                 "shasum": ""
             },
             "require": {
-                "mathiasgrimm/x": "dev-master",
+                "mathiasgrimm/x": "1.1",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -822,7 +822,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "mathiasgrimm\\arraypath\\": "src/"
+                    "MathiasGrimm\\ArrayPath\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -842,7 +842,7 @@
                 "php",
                 "util"
             ],
-            "time": "2014-10-13 20:44:49"
+            "time": "2015-03-20 18:55:12"
         },
         {
             "name": "mathiasgrimm/laravel-dot-env-gen",
@@ -888,16 +888,16 @@
         },
         {
             "name": "mathiasgrimm/x",
-            "version": "dev-master",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mathiasgrimm/x.git",
-                "reference": "69e5bd4cf7075e25d1aebc0356418e47e85cef55"
+                "reference": "bf32c9c6dc6d769ad8c35864c84fce837c6ec4ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mathiasgrimm/x/zipball/69e5bd4cf7075e25d1aebc0356418e47e85cef55",
-                "reference": "69e5bd4cf7075e25d1aebc0356418e47e85cef55",
+                "url": "https://api.github.com/repos/mathiasgrimm/x/zipball/bf32c9c6dc6d769ad8c35864c84fce837c6ec4ab",
+                "reference": "bf32c9c6dc6d769ad8c35864c84fce837c6ec4ab",
                 "shasum": ""
             },
             "require": {
@@ -906,7 +906,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "mathiasgrimm\\x\\": "src/"
+                    "MathiasGrimm\\X\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -922,7 +922,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2015-01-22 10:55:54"
+            "time": "2015-03-20 18:42:52"
         },
         {
             "name": "monolog/monolog",
@@ -3230,8 +3230,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "mathiasgrimm/laravel-dot-env-gen": 20,
-        "mathiasgrimm/x": 20,
-        "mathiasgrimm/arraypath": 20,
         "fzaninotto/faker": 20
     },
     "prefer-stable": false,

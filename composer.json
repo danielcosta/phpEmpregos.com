@@ -7,8 +7,8 @@
     "require": {
         "laravel/framework": "5.0.*",
         "mathiasgrimm/laravel-dot-env-gen": "dev-master",
-        "mathiasgrimm/x": "dev-master",
-        "mathiasgrimm/arraypath": "dev-master",
+        "mathiasgrimm/x": "1.1",
+        "mathiasgrimm/arraypath": "1.2",
         "guzzlehttp/guzzle": "~4.0",
         "barryvdh/laravel-ide-helper": "~2.0"
     },
