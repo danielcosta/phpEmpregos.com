@@ -62,7 +62,8 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'options'   => [
-                PDO::MYSQL_ATTR_INIT_COMMAND => "SET sql_mode = 'TRADITIONAL'"
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET sql_mode = 'TRADITIONAL'",
+                PDO::ATTR_EMULATE_PREPARES   => true
             ]
         ],
 

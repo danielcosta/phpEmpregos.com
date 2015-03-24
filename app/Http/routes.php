@@ -11,19 +11,31 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+//Route::get('/', 'WelcomeController@index');
+//
+//Route::get('home', 'HomeController@index');
+//
+//Route::controllers([
+//	'auth' => 'Auth\AuthController',
+//	'password' => 'Auth\PasswordController',
+//]);
+//
+//if ('production' != env('APP_ENV')) {
+//    Route::get('test', function(){
+//
+////        xd(new phpEmpregos\Job\Job());
+//
+//    });
+//}
 
-Route::get('home', 'HomeController@index');
+Route::get('/'               , ['as' => 'home'            , 'uses' => 'HomeController@index'     ]);
+Route::get('sobre'           , ['as' => 'sobre'           , 'uses' => 'AboutController@index'    ]);
+Route::get('contato'         , ['as' => 'contato'         , 'uses' => 'ContactController@create' ]);
+Route::get('feed/atom'       , ['as' => 'feed.atom'       , 'uses' => 'FeedController@atom'      ]);
+Route::get('trovit_feed.xml' , ['as' => 'feed.trovit'     , 'uses' => 'FeedController@trovit'    ]);
+Route::get('sitemap.xml'     , ['as' => 'sitemap.xml'     , 'uses' => 'SiteMapController@xml'    ]);
+Route::get('vaga-{id}'       , ['as' => 'vaga.slug'       , 'uses' => 'JobController@show'       ]);
+Route::get('pesquisar-vagas' , ['as' => 'pesquisar.vagas' , 'uses' => 'JobController@index'      ]);
+Route::get('cadastrar-vaga'  , ['as' => 'cadastrar.vaga'  , 'uses' => 'JobController@create'     ]);
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-
-if ('production' != env('APP_ENV')) {
-    Route::get('test', function(){
-
-//        xd(new phpEmpregos\Job\Job());
-
-    });
-}
+Route::resource('vaga', 'JobController');

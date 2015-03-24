@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
+
+@import "../../../vendor/twbs/bootstrap/less/bootstrap.less";
+
+@import "../../../vendor/components/font-awesome/less/font-awesome.less";
+@fa-font-path: "/fonts/fa";
+
+
+@brand-primary : #85BB65;
+@green  : #85BB65;
+@yellow : #f0ad4e;
+@red    : #d9534f;
+@blue   : #428bca;
+
+.green {
+  background-color: @green;
+}
+
+.yellow {
+  background-color: @yellow;
+}
+
+.red {
+  background-color: @red;
+}
+
+.blue {
+  background-color: @blue;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-top: 80px;
+
+  color: #525252;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+
+}
+
+.gf-grid {
+
+  table, th, tr, td {
+	border:        1px solid black !important;
+	border-left:   1px solid black !important;
+	border-right:  1px solid black !important;
+	border-bottom: 1px solid black !important;
+	border-top:    1px solid black !important;
+  }
+
+  @link : @blue;
+
+  thead {
+	color: #000;
+  }
+
+  .table-hover {
+	color: #000;
+  }
+
+  a:link {
+	color: @link;
+  }
+
+  a:visited {
+	color: @link;
+  }
+
+  a:hover {
+	color: @link;
+  }
+
+  a:active {
+	color: @link;
+  }
+
+}
+
+.navbar {
+  background-color:@brand-primary;
+}
+
+.navbar-default .navbar-brand {
+  color:#fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#fff;
+}
+
+.navbar-default .navbar-toggle {
+  color:#fff;
+}
+
+////@media (min-width: @screen-lg) {
+//	.container {
+//		width:100%;
+//		border:0px;
+////	    .container-fluid();
+//    }
+////}
+
+.panel-grinza {
+  //	.panel-primary();
+  .panel-default();
+  //	.panel-info();
+}
+
+//.panel-primary {
+//	border-color: #428bca;
+//
+//	.panel-heading {
+//		background-color: #428bca;
+//		border-color: #428bca;
+//	}
+//}
+
+.btn-grinza {
+  .btn-primary();
+}
+
+.btn-buscar-vagas {
+
+}
+
+
+@media (max-width: @screen-sm-min) {
+
+  h1 {
+	font-size:25px;
+  }
+
+  h2 {
+	font-size:18px;
+  }
+
+  h3 {
+	font-size:13px;
+  }
+
+  h4 {
+	font-size:13px;
+  }
+
+  h5 {
+	font-size:13px;
+  }
+
+}
+
+.job-item {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 0 10px 0;
+}
+
+.page-footer {
+  margin-top: 40px;
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.page-footer p:last-child {
+  margin-bottom: 0;
+}
