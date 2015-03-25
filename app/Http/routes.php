@@ -28,6 +28,7 @@
 //    });
 //}
 
+// routes
 Route::get('/'               , ['as' => 'home'            , 'uses' => 'HomeController@index'     ]);
 Route::get('sobre'           , ['as' => 'sobre'           , 'uses' => 'AboutController@index'    ]);
 Route::get('contato'         , ['as' => 'contato'         , 'uses' => 'ContactController@create' ]);
@@ -35,7 +36,9 @@ Route::get('feed/atom'       , ['as' => 'feed.atom'       , 'uses' => 'FeedContr
 Route::get('trovit_feed.xml' , ['as' => 'feed.trovit'     , 'uses' => 'FeedController@trovit'    ]);
 Route::get('sitemap.xml'     , ['as' => 'sitemap.xml'     , 'uses' => 'SiteMapController@xml'    ]);
 Route::get('vaga-{id}'       , ['as' => 'vaga.slug'       , 'uses' => 'JobController@show'       ]);
+Route::post('enviar-cv'      , ['as' => 'enviarcv'        , 'uses' => 'JobController@sendCv'     ]);
 Route::get('pesquisar-vagas' , ['as' => 'pesquisar.vagas' , 'uses' => 'JobController@index'      ]);
 Route::get('cadastrar-vaga'  , ['as' => 'cadastrar.vaga'  , 'uses' => 'JobController@create'     ]);
 
+// resources
 Route::resource('vaga', 'JobController');

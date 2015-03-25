@@ -69,16 +69,21 @@ class JobController extends Controller
         } else {
             $sTitle = $job->title;
         }
-        
+
+        $aForm = [
+            'sName'    => '',
+            'sEmail'   => '',
+            'sPhone'   => '',
+            'sComment' => ''
+        ];
+
         $viewData = [
             'title' => $sTitle,
-            'job'   => $job
+            'job'   => $job,
+            'aForm' => $aForm
         ];
-        
         return $this->makeView($viewData);
     }
-    
-    
     
     public function create()
     {
@@ -87,5 +92,10 @@ class JobController extends Controller
         ];
         
         return $this->makeView($viewData);
+    }
+
+    public function sendCv()
+    {
+        xd($_FILES);
     }
 }

@@ -18,6 +18,15 @@ function get_or_fallback($data, $fallback = 'Não Disponível')
     return $data ?: $fallback;
 }
 
+function get_advertiser_url_or_fallback($data, $fallback = 'Não Disponível')
+{
+    if ($data) {
+        return "<a href=\"" . $data . "\" target=\"_blank\">" . $data . "</a>";
+    } else {
+        return $fallback;
+    }
+}
+
 function vaga_slug($job, $prefix = 'vaga-')
 {
     if (!is_object($job)) {
